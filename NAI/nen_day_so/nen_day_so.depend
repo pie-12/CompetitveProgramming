@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1647530935 source:d:\codeblocks files\nen_day_so\main.cpp
+	<iostream>
+	<cmath>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1660238159 source:d:\codeblocks files\bigmodulo\main.cpp
+	<iostream>
+	<cmath>
+
