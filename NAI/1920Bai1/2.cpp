@@ -14,8 +14,7 @@ int main()
         cin >> a[i];
     }
     int dem=n;
-    for (int i =0 ; i<n ; i++)
-    {
+    for (int i =0 ; i<n ; i++){
         a[i]=a[i]%k;
     }
     sort (a,a+n);
