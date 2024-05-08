@@ -8,8 +8,9 @@ int main ()
     string s;
     cin >> s;
     reverse(s.begin(), s.end());
-    for (int i = 3; i < s.length(); i=i+4)
+    for (int i = 3; i < s.length(); i=i+4){
     s.insert(i,".");
+}
     reverse(s.begin(), s.end());
     cout << s;
     return 0;
