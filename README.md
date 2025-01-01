@@ -14,10 +14,4 @@ Hi, I'm Nguyen Tung Lam! I've been passionate about **competitive programming** 
 - Dynamic Programming, Graph Algorithms, Advanced Data Structures
 - Problem-solving and algorithmic thinking
 
-## 🤝 Connect with Me!
-- [Codeforces Profile](https://codeforces.com/profile/pie-12)
-- [LQDOj Profile](https://lqdoj.edu.vn/user/pie12)
-- [AtCoder Profile](https://atcoder.jp/users/pie12)
-- [Email](mailto:tunglamnguyenxd@gmail.com)
-
 Happy coding! 💻✨
