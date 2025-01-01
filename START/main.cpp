@@ -1,6 +1,10 @@
-//yo, i'm pie12 (●'◡'●)
+//yo, i'm pie12 (・ω・)ﾉ 
 #include <bits/stdc++.h>
 #define HI  signed main()
+#define ll long long
+#define ld long double
+#define endl '\n'
+using namespace std;
 #ifndef ONLINE_JUDGE
 #define IO \
 freopen("main.inp","r",stdin); \
@@ -15,13 +19,13 @@ cin.tie(nullptr);
 #define BYE \
 cerr <<"Time elapsed: " << TIME << " s\n"; \
 return 0;
-#define int long long
-#define float long double
-#define endl '\n'
-using namespace std;
+const ll MOD = 1e9 + 7;
 
 HI {
-    IO FAST
-
+    //IO 
+    FAST
+    
+    int a, b; cin >> a >> b;
+    cout << 
     BYE
 }

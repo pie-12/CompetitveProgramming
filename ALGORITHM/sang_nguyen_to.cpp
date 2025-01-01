@@ -7,13 +7,12 @@
 
   // Thuật toán sàng nguyên tố
   // Nếu một số là số nguyên tố, thì tất cả các bội của nó không phải số nguyên tố
-  for (int i = 2; i <= N; i++) {
-    if (check[i] == true) {
-      for (int j = i * i; j <= N; j += i) 
-        check[j] = false;
+  
+  for(int i = 2; i <= sqrt(2e5); i++){
+        if(sievie[i] == true)
+            for(int j = i*i; j <= 2e5; j += i)
+                sievie[j] = false;//đúng
     }
-  }
-
 
   //chú ý
   for(int i = 2; i <= 2e5; i++){
@@ -27,4 +26,16 @@ for(ll i = 1; i < n; i++) {
         for(ll j = i; j < n; j += i) {
             a[j]++;
         }
+    }
+
+//số nguyên tố nhỏ nhất tạo thành số đó của vị trí i
+vector<int>sievie (MAXn + 5);
+    for(int i = 1; i <= MAXn; i++){
+      sievie[i] = i;
+    }
+    for(int i = 2; i <= MAXn; i++){
+        if(sievie[i] == i)
+            for(int j = i * i; j <= MAXn; j += i){
+                if(sievie[j] == j) sievie[j] = i;
+            }
     }
