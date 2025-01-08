@@ -11,7 +11,7 @@ int main()
 
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
+    
     int t; cin >> t;
     while(t--)
     {
@@ -29,7 +29,7 @@ int main()
     	for(int i = 1; i < n; i++){
     		if(mp[a[i]] == true){
     			while(mp[cnt] == true) cnt++;
-    			cout << cnt << ' ';
+    			cout << cnt << ' ';							
     			mp[cnt] = true;
     		}
 	    	else{
