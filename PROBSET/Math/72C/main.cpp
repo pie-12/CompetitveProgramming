@@ -8,10 +8,8 @@ void solve()
 {
     int x; cin>>x;
     int odd=0,even=0;
-    for(int i=1;i<=sqrt(x);i++)
-        if(x%i==0)
-            if(i&1)odd++;else even++;
-    cout<<od
+    for(int i=1;i<=x;i++)if(x%i==0)if(i&1)odd++;else even++;
+    if(odd==even)cout<<"yes";else cout<<"no";
 }
 
 int main()

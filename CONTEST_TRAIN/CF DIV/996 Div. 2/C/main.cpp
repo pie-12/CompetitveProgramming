@@ -6,7 +6,7 @@ using namespace std;
 void solve()
 {
     int n, m; cin >> n >> m;
-    int a[n][m];
+    ll a[n][m];
     bool go[n][m];
     memset(go, false, n*m);
     string s; cin >> s;
@@ -17,29 +17,29 @@ void solve()
         if(s[index]=='D') ++i;
     }
 
-    int row[n], xrow[n];
+    ll row[n];
     for(int i = 0; i < n; i++){
-        row[i] = 0, xrow[i] = 0;
-        for(int j = 0; j < m; j++){
-            if(go[i][j]==true)xrow[i]++;
-            row[i] += a[i][j];}
+        row[i] = 0;
+        for(int j = 0; j < m; j++)row[i] += a[i][j];
     }
-    int col[m], xcol[m];
+    ll col[m];
     for(int j = 0; j < m; j++){
-        col[j] = 0, xcol[j] = 0;
-        for(int i = 0; i < n; i++){
-            if(go[i][j]==true)xcol[j]++;
-            col[j] += a[i][j];
-        }
+        col[j] = 0;
+        for(int i = 0; i < n; i++)col[j] += a[i][j];
     }
 
-    for(int i=0;i<n;i++)for(int j=0;j<m;j++)if(go[i][j]==true)a[i][j]=(col[j]-row[i])/(xrow[i]-xcol[j]);
-    for(int i=0;i<n;i++){
-        for(int j=0;j<m;j++)cout << a[i][j] << ' ';
-        cout << '\n';
+    for(int i=0;i<n;i++)for(int j=0;j<m;j++){
+        if(i==n-1 && j==m-1)break;
+        if(go[i][j]){
+            if(go[i][j+1] == true) {a[i][j]=-col[j];}
+            else if(go[i+1][j] == true) {a[i][j]=-row[i];}
+            row[i]+=a[i][j]; col[j]+=a[i][j];   
+        }      
     }
-    for(int i=0;i<n;i++)cerr<<xrow[i]; cerr <<'\n';
-    for(int i=0;i<m;i++)cerr<<xcol[i]; cerr <<'\n';
+    
+    if(go[n-1][m-2] == true) a[n-1][m-1]=-col[m-1];
+    else a[n-1][m-1]=-row[n-1];
+    for(int i=0;i<n;i++){for(int j=0;j<m;j++){cout<<a[i][j]<<' ';}cout<<'\n';} 
 }
 
 int main()
@@ -49,6 +49,6 @@ int main()
     freopen("main.out","w",stdout);
     #endif
     ios::sync_with_stdio(false), cin.tie(nullptr);
-    int t=1; while(t--)solve();
+    int t=1; cin>>t; while(t--)solve();
     return 0;
 }
