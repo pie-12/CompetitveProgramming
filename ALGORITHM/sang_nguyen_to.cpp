@@ -39,3 +39,11 @@ vector<int>sievie (MAXn + 5);
                 if(sievie[j] == j) sievie[j] = i;
             }
     }
+
+//uoc dau tien lon nhat
+for (int x = 2; x <= n; x++) {
+if (sieve[x]) continue;
+for (int u = 2*x; u <= n; u += x) {
+sieve[u] = x;
+}
+}

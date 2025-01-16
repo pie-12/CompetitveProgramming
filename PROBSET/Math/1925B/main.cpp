@@ -2,6 +2,7 @@
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
+
 void solve()
 {
 	int x,n;cin>>x>>n;	
@@ -16,7 +17,7 @@ void solve()
 			if(x-e*n<0)break;			
 			ans=max(__gcd(e,x-e*n),ans);			
 		}
-		cout <<ans<<'\n';
+		cout <<ans<<'\n';	
 	}
 }
 
