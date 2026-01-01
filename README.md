@@ -31,13 +31,15 @@ My personal algorithm library (The "Spellbook").
 - **String**: KMP, Z-Algo, Hashing...
 
 ### `02_Practice/` ⚔️
-Daily practice problems, organized by **Topic** and **Platform**.
-- **Topic_Training/**: Targeted practice (e.g., `Two_Pointers`, `Bitmasks`).
-- **Dynamic_Programming/**, **Graph_Theory/**...: Categorized problems.
-- **Uncategorized/**: Problems from various OJs (Codeforces, AtCoder, VNOI...) waiting to be sorted.
+Daily practice problems, organized primarily by **Platform**.
+- **Codeforces/**: Standard rounds and `Gym/` specialized training.
+- **AtCoder/**: Organized by `ABC/` and `ARC/`.
+- **CSES/**: Categorized by **Topic** (DP, Graph, Sorting...) as per the standard problem set.
+- **VNOI/**, **SPOJ/**, **HACKERRANK/**: Problems from various Online Judges.
+- **Topic_Training/**: Targeted practice sessions (e.g., `Two_Pointers`).
 
 ### `03_Contests/` 🏆
-Live contest submissions and virtual participation.
+Live contest submissions and virtual participation, organized by Arena.
 - **Codeforces/**: CF Rounds, Div 2, Div 3, Edu Rounds.
 - **AtCoder/**: ABC, ARC.
 - **ICPC/**: Regional and National contests.
