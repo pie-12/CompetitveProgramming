@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1647353981 source:d:\codeblocks files\so_phong_phu\main.cpp
+	<iostream>
+	<cmath>
+	<algorithm>
+	<iomanip>
+

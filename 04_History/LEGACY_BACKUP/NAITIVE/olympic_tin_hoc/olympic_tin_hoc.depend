@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1647523462 source:d:\codeblocks files\olympic_tin_hoc\main.cpp
+	<iostream>
+	<algorithm>
+
+1647524402 source:d:\codeblocks files\olympic_tin_hoc\nendayso.cpp
+	<iostream>
+	<algorithm>
+

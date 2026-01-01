@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1645468364 source:d:\codeblocks files\bai4nai\main.cpp
+	<iostream>
+	<cmath>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1647739065 source:d:\codeblocks files\mua_go\main.cpp
+	<iostream>
+	<algorithm>
+
