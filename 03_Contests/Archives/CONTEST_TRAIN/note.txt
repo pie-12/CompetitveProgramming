@@ -1,6 +1,0 @@
-https://codeforces.com/contest/2044/problem/E
-xmin = max(l1, int(l2/p));
-sửa thành
-int xmin = max(l1, int((l2-1)/p+1));
-Vấn đề ở thay đổi này
-Sự khác biệt nằm ở việc xử lý số nguyên và đảm bảo giới hạn tối thiểu của x. Khi thay đổi cách tính xmin, bạn đã bỏ qua việc điều chỉnh chỉ số xmin để đảm bảo nó chính xác l2 không chia hết cho p.
